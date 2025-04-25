@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <h1 id="judul">Judul Aseli</h1>
+    <button id="btnUbah">Ubah judul dan Warna</button>
+    <script>
+      const judul = document.getElementById("judul");
+      const tombol = document.getElementById("btnUbah");
+
+      tombol.addEventListener("click", () => {
+        judul.textContent = "Judul Telah Diubah!";
+        judul.style.color = "purple";
+        judul.style.fontSize = "2rem";
+      });
+    </script>
+  </body>
+</html>

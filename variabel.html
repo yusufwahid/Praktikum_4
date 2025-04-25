@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Variabel</title>
+  </head>
+  <body>
+    <div id="tampilVar">
+      <h1></h1>
+    </div>
+    <script>
+      let nama = "Fafafu";
+      const umur = 21;
+      var isActive = true;
+      let tidakAda;
+      let kosong = null;
+
+      const html = `
+      <h3>Contoh Tipe Variabel</h3>
+      <p>nama       (String)   : ${nama}</p>
+      <p>umur       (Number)   : ${umur}</p>
+      <p>isActive   (Boolean)  : ${isActive}</p>
+      <p>tidakAda   (Undefined): ${tidakAda}</p>
+      <p>kosong     (Null)     : ${kosong}</p>
+    `;
+      document.getElementById("tampilVar").innerHTML = html;
+    </script>
+  </body>
+</html>
